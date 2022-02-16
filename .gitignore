@@ -271,4 +271,4 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,java,kotlin,windows
 /.idea/runConfigurations.xml
 
-apikey.properties
+#apikey.properties

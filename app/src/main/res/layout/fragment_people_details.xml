@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsPeopleFragmentRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBackground"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".view.DetailsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/detailsPeopleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details_people_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/people_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/details_title_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/details_people_poster"
+                    android:layout_width="@dimen/details_image_width"
+                    android:layout_height="@dimen/details_image_height"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/details_marginStart"
+                    android:contentDescription="@string/poster_description"
+                    android:scaleType="fitXY"
+                    tools:srcCompat="@drawable/poster" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/details_people_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/details_marginStart"
+                        android:padding="@dimen/details_padding"
+                        android:text="@string/people_gender"
+                        android:textSize="@dimen/details_text_size" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/details_people_popularity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/details_marginStart"
+                            android:padding="@dimen/details_padding"
+                            android:text="@string/people_popularity"
+                            android:textSize="@dimen/details_text_size" />
+
+                        <ImageView
+                            android:id="@+id/imageStarDetailPeople"
+                            android:layout_width="@dimen/star_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:contentDescription="@string/star_description"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/rating1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/details_people_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/details_marginStart"
+                        android:padding="@dimen/details_padding"
+                        android:text="@string/people_birthday"
+                        android:textSize="@dimen/details_text_size" />
+                    <TextView
+                        android:id="@+id/details_people_deathday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/details_marginStart"
+                        android:padding="@dimen/details_padding"
+                        android:text="@string/people_deathday"
+                        android:textSize="@dimen/details_text_size" />
+
+                    <TextView
+                        android:id="@+id/details_people_place_of_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/details_marginStart"
+                        android:padding="@dimen/details_padding"
+                        android:text="@string/people_place_of_birth"
+                        android:textSize="@dimen/details_text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/details_people_biography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_marginStart"
+                android:layout_marginTop="@dimen/details_marginStart"
+                android:padding="@dimen/details_padding"
+                android:text="@string/people_biography"
+                android:textSize="@dimen/details_text_size" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginTop="@dimen/details_marginStart"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/detailsPeopleFragmentLoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/loadingBackground"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</FrameLayout>
