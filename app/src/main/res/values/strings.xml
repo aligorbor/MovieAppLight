@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">MovieAppLight</string>
+    <string name="choose_russia_world">Choose Russia/World</string>
+    <string name="reload">Reload</string>
+    <string name="error">Error</string>
+    <string name="title">Title</string>
+    <string name="original_title">Original Title</string>
+    <string name="genres">Genres</string>
+    <string name="duration">%d min.</string>
+    <string name="rating">%.1f (%d)</string>
+    <string name="budget">Budget: %d $</string>
+    <string name="revenue">Revenue: %d $</string>
+    <string name="release_date">Release date: (%s)</string>
+    <string name="overview">Overview</string>
+    <string name="search">Search</string>
+    <string name="poster_description">Poster</string>
+    <string name="star_description">Star</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="history">History</string>
+    <string name="favorite">Favorite</string>
+    <string name="adult">Adult</string>
+    <string name="hint_text_note">Enter your notes here</string>
+    <string name="persons">Persons</string>
+    <string name="people_name">Name</string>
+    <string name="people_gender">Gender: %d</string>
+    <string name="people_popularity">%.3f</string>
+    <string name="people_birthday">Birthday: %s</string>
+    <string name="people_deathday">Deathday: %s</string>
+    <string name="people_place_of_birth">Place of birth: %s</string>
+    <string name="people_biography">Biography</string>
 </resources>
