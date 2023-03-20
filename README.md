@@ -1,5 +1,6 @@
 # MovieAppLight
-The application displays a list of movies and supports pagination. The application has the following features:
+The application displays lists of films from www.themoviedb.org by category and supports pagination.
+The application has the following features:
 - the main screen has vertical and horizontal lists. In the vertical list, you can view lists of movies by category, in the horizontal lists, you can view movies of a specific category. The movie card contains the movie poster, title, release date and rating, as well as a heart icon, when you tap on which the movie is added to favorites and the card is saved to the local database. When you tap on the fab-button, English-language or Russified films are loaded.
 - when you tap on the name of a category of films, a fragment opens to view films of a certain category in a vertical list.
 - when you tap on a list element, a screen is displayed with a description of the selected film - genre, budget, etc., and a summary. At the bottom of the screen, you can leave a note about the movie, which is saved in the local database.
